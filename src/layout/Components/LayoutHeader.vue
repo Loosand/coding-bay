@@ -19,12 +19,12 @@ const { y } = useWindowScroll()
       <i
         :class="{ 'ri-menu-line': !menuStore.ismenuOpen, 'ri-close-line': menuStore.ismenuOpen }"
         @click="menuStore.toggleMenu()"
-        class="-ml-10 text-4xl font-bold transition-all duration-500 hover:rotate-90 md:hidden"
+        class="text-4xl font-bold md:hidden"
       ></i>
 
       <h1
-        :class="{ 'justify-items-starts': y > 60, 'text-7xl': y < 60 }"
-        class="hidden text-3xl font-bold md:block"
+        :class="{ 'justify-items-starts': y > 60, 'md:text-6xl': y < 60 }"
+        class="text-3xl font-bold md:block md:text-3xl"
       >
         <span class="font-light">Cod</span>ing Bay
       </h1>

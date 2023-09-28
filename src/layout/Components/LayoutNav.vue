@@ -10,7 +10,7 @@ const menuStore = useMenuStore()
   <nav class="hidden md:block">
     <!--    <div class="bg bg-t z-50"></div>-->
     <ul
-      class="item-center flex flex-wrap justify-center gap-2 bg-red-500 px-8 pb-1 pt-4 font-bold md:flex md:text-xl lg:gap-10 [&>li]:cursor-pointer [&>li]:text-xl"
+      class="item-center flex flex-wrap justify-center gap-2 bg-red-500 px-8 pb-2 pt-3 font-bold md:flex md:text-xl lg:gap-10 [&>li]:cursor-pointer [&>li]:text-xl"
     >
       <li
         v-for="i in navStore.items"
@@ -21,7 +21,7 @@ const menuStore = useMenuStore()
       >
         <keep-alive
           ><router-link
-            class="flex h-12 items-center justify-center whitespace-nowrap px-6 text-base last:md:px-8 lg:text-xl"
+            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 text-xl transition-all duration-300 hover:bg-white hover:text-black last:md:px-8"
             :to="i.link"
             >{{ i.name }}</router-link
           ></keep-alive
@@ -81,7 +81,7 @@ const menuStore = useMenuStore()
 }
 
 .current {
-  @apply rounded-md text-2xl text-black outline outline-4 outline-white;
+  @apply bg-white text-black;
 }
 
 .current_mobile {
