@@ -7,44 +7,41 @@ const { y } = useWindowScroll()
 </script>
 
 <template>
-  <!-- HERO -->
-  <div
-    :class="{ 'h-20 md:h-64': y < 60 }"
-    class="z-50 flex h-20 items-center justify-center bg-gray-900 transition-all duration-300 md:h-24"
+  <header
+    :class="{ 'md:h-64 md:flex-col': y < 60 }"
+    class="z-50 flex h-20 w-full items-center justify-around gap-4 bg-gray-900 font-bold transition-all duration-300 md:h-24 md:justify-center"
   >
-    <div
-      :class="{ 'md:flex-col': y < 60 }"
-      class="flex w-full items-center justify-around gap-4 md:justify-center"
-    >
-      <i
-        :class="{ 'ri-menu-line': !menuStore.ismenuOpen, 'ri-close-line': menuStore.ismenuOpen }"
-        @click="menuStore.toggleMenu()"
-        class="text-4xl font-bold md:hidden"
-      ></i>
+    <!-- MOBILE MENU ICON -->
+    <i
+      :class="menuStore.ismenuOpen ? 'ri-close-line' : 'ri-menu-line'"
+      @click="menuStore.toggleMenu()"
+      class="text-4xl md:hidden"
+    ></i>
 
-      <h1
-        :class="{ 'justify-items-starts': y > 60, 'md:text-6xl': y < 60 }"
-        class="text-3xl font-bold md:block md:text-3xl"
+    <!--TITLE -->
+    <h1
+      :class="{ 'justify-items-starts': y > 60, 'md:text-6xl': y < 60 }"
+      class="hidden text-3xl md:block md:text-3xl"
+    >
+      <span class="font-light">Cod</span>ing Bay
+    </h1>
+
+    <!-- SEARCH INPUT -->
+    <div class="flex items-center gap-4 text-5xl">
+      <div
+        :class="{ 'flex-col before:hidden after:hidden': y > 60 }"
+        class="flex gap-4 overflow-hidden before:content-['{'] after:content-['}']"
       >
-        <span class="font-light">Cod</span>ing Bay
-      </h1>
-      <div class="flex items-center gap-4 text-5xl font-bold">
-        <span class="shadow-md">{</span>
-        <div :class="{ 'flex-col': y > 80 }" class="flex gap-4">
-          <input
-            type="search"
-            autofocus
-            placeholder="🔎 学习最前沿、实用的前端技术"
-            autocomplete="off"
-            spellcheck="false"
-            role="combobox"
-            class="mt-2 w-72 rounded-md px-3 py-2 text-base font-semibold text-black shadow-md outline"
-          />
-        </div>
-        <span class="shadow-md">}</span>
+        <input
+          type="search"
+          autofocus
+          placeholder="🔎 学习最前沿、实用的前端技术"
+          autocomplete="off"
+          spellcheck="false"
+          role="combobox"
+          class="mt-2 w-72 rounded-sm px-3 py-2 text-base font-semibold text-black shadow-md outline-white focus:outline-black"
+        />
       </div>
     </div>
-  </div>
+  </header>
 </template>
-
-<style scoped></style>
