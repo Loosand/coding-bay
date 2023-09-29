@@ -1,67 +1,83 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useNavStore = defineStore('nav', () => {
-  let currentIndex = ref(1)
-  const items = [
-    {
-      id: 1,
-      name: 'CSS',
-      link: '/'
-    },
-    {
-      id: 2,
-      name: 'JS',
-      link: '/js'
-    },
-    {
-      id: 3,
-      name: 'Vue',
-      link: '/vue'
-    },
-    {
-      id: 4,
-      name: 'Node',
-      link: '/node'
-    },
-    {
-      id: 5,
-      name: 'Serve',
-      link: '/serve'
-    },
-    {
-      id: 6,
-      name: 'UI',
-      link: '/ui'
-    },
+export const useNavStore = defineStore(
+  'nav',
+  () => {
+    let currentIndex = ref(1)
 
-    {
-      id: 7,
-      name: 'Tool',
-      link: '/tool'
-    },
-    {
-      id: 8,
-      name: 'Blog',
-      link: '/blog'
-    },
-    {
-      id: 9,
-      name: '综合',
-      link: '/common'
+    const items = [
+      {
+        id: 1,
+        name: 'CSS',
+        link: '/'
+      },
+      {
+        id: 2,
+        name: 'JS',
+        link: '/js'
+      },
+      {
+        id: 3,
+        name: 'Vue',
+        link: '/vue'
+      },
+      {
+        id: 4,
+        name: 'Node',
+        link: '/node'
+      },
+      {
+        id: 5,
+        name: 'Serve',
+        link: '/serve'
+      },
+      {
+        id: 6,
+        name: 'UI',
+        link: '/ui'
+      },
+
+      {
+        id: 7,
+        name: 'Tool',
+        link: '/tool'
+      },
+      {
+        id: 8,
+        name: 'Blog',
+        link: '/blog'
+      },
+      {
+        id: 9,
+        name: '综合',
+        link: '/common'
+      }
+    ]
+
+    const changeIndex = computed((index) => {
+      currentIndex = index
+    })
+
+    return {
+      currentIndex,
+      items,
+      changeIndex
     }
-  ]
-
-  const changeIndex = (index) => {
-    currentIndex = index
+  },
+  {
+    persist: {
+      enabled: true
+    },
+    strategies: [
+      {
+        key: 'menuIndex',
+        storage: localStorage,
+        paths: ['currentIndex']
+      }
+    ]
   }
-
-  return {
-    currentIndex,
-    items,
-    changeIndex
-  }
-})
+)
 
 export const useMenuStore = defineStore('menu', () => {
   const ismenuOpen = ref(false)
