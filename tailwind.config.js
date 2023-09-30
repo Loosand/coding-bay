@@ -2,6 +2,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 export default {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -10,5 +11,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: ['tailwindcss-animate']
 }

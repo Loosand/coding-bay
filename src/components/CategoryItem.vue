@@ -15,7 +15,7 @@ const handleLink = (url) => {
 <template>
   <div
     @click="handleLink(item.enUrl ? item.enUrl : item.zhUrl)"
-    class="hover:[&>a] relative w-40 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-2xl md:w-52 lg:w-64"
+    class="relative w-40 cursor-pointer overflow-hidden rounded-2xl bg-white drop-shadow-lg transition-all hover:shadow-xl dark:bg-gray-700 md:w-52 lg:w-64"
   >
     <!-- CONTENT -->
     <div class="flex flex-col gap-2 p-5 md:gap-3 lg:gap-4">
@@ -26,12 +26,17 @@ const handleLink = (url) => {
           :src="item.icon"
           alt="icon"
         />
-        <h1 :class="item.titleColor" class="text-lg font-bold md:text-xl lg:text-2xl">
+        <h1
+          :class="item.titleColor"
+          class="text-lg font-bold dark:text-white md:text-xl lg:text-2xl"
+        >
           {{ item.title }}
         </h1>
       </div>
 
-      <h2 class="text-xs font-semibold text-gray-500 md:text-base md:text-black lg:text-lg">
+      <h2
+        class="text-xs font-semibold text-gray-500 dark:text-gray-300 dark:text-white md:text-base md:text-black lg:text-lg"
+      >
         {{ item.subTitle }}
       </h2>
 

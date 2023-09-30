@@ -8,6 +8,23 @@ const { y } = useWindowScroll()
 const keyword = ''
 
 const search = (i) => {}
+
+const darkMode = () => {
+  if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+
+  localStorage.theme = 'light'
+
+  localStorage.theme = 'dark'
+  localStorage.removeItem('theme')
+}
+
+const lightMode = () => {
+  document.documentElement.classList.remove('dark')
+}
 </script>
 
 <template>
@@ -25,7 +42,7 @@ const search = (i) => {}
     <!--TITLE -->
     <h1
       :class="{ 'justify-items-starts': y > 60, 'md:text-6xl': y < 60 }"
-      class="hidden text-3xl md:block md:text-3xl"
+      class="hidden text-3xl dark:text-red-500 md:block md:text-3xl"
     >
       <span class="font-light">Cod</span>ing Bay
     </h1>
@@ -45,9 +62,15 @@ const search = (i) => {}
           autocomplete="off"
           spellcheck="false"
           role="combobox"
-          class="mt-2 w-72 rounded-sm px-3 py-2 text-base font-semibold text-black shadow-md outline-white focus:outline-black"
+          class="mt-2 w-72 rounded-sm px-3 py-2 text-base font-semibold text-black shadow-md outline-white focus:outline-black dark:bg-gray-900 dark:outline dark:focus:outline-white"
         />
       </div>
     </div>
+
+    <!--    -->
+    <button class="absolute right-32 top-28 hidden text-3xl md:block">
+      <i @click="lightMode" class="ri-sun-fill"></i>
+      <i @click="darkMode" class="ri-moon-fill"></i>
+    </button>
   </header>
 </template>

@@ -10,18 +10,18 @@ const menuStore = useMenuStore()
   <nav class="hidden md:block">
     <!--    <div class="bg bg-t z-50"></div>-->
     <ul
-      class="item-center flex flex-wrap justify-center gap-2 bg-red-500 px-8 pb-2 pt-3 font-bold md:flex md:text-xl lg:gap-10 [&>li]:cursor-pointer [&>li]:text-xl"
+      class="item-center flex flex-wrap justify-center gap-2 bg-red-500 px-8 pb-2 pt-3 font-bold md:flex md:text-xl lg:gap-10"
     >
       <li
         v-for="i in navStore.items"
         key="i.id"
-        class="rounded-md transition-all duration-300 hover:text-4xl"
+        class="cursor-pointer rounded-md text-xl hover:text-4xl"
         :class="{ current: navStore.currentIndex === i.id }"
         @click="navStore.currentIndex = i.id"
       >
         <keep-alive
           ><router-link
-            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 text-xl transition-all duration-300 hover:bg-white hover:text-black last:md:px-8"
+            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 text-xl hover:bg-white hover:text-black hover:dark:bg-gray-900 hover:dark:text-white last:md:px-8"
             :to="i.link"
             >{{ i.name }}</router-link
           ></keep-alive
@@ -32,14 +32,14 @@ const menuStore = useMenuStore()
   </nav>
 
   <!-- MENU-MOBILE -->
-  <nav v-show="menuStore.ismenuOpen" class="block transition-all md:hidden">
+  <nav v-show="menuStore.ismenuOpen" class="block transition md:hidden">
     <ul
-      class="item-center flex flex-col flex-wrap gap-4 bg-gray-600 px-8 py-4 font-bold [&>li]:cursor-pointer [&>li]:text-xl"
+      class="item-center flex flex-col flex-wrap gap-4 bg-gray-600 px-8 py-4 font-bold dark:bg-gray-800"
     >
       <li
         v-for="i in navStore.items"
         key="i.id"
-        class="rounded-md transition-all duration-300 hover:text-4xl"
+        class="cursor-pointer rounded-md text-xl transition duration-300 hover:bg-white hover:text-black"
         :class="{ current_mobile: navStore.currentIndex === i.id }"
         @click="navStore.currentIndex = i.id"
       >
@@ -81,7 +81,7 @@ const menuStore = useMenuStore()
 }
 
 .current {
-  @apply bg-white text-black;
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white;
 }
 
 .current_mobile {
