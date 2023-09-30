@@ -4,6 +4,10 @@ import { useMenuStore } from '@/stores/nav'
 
 const menuStore = useMenuStore()
 const { y } = useWindowScroll()
+
+const keyword = ''
+
+const search = (i) => {}
 </script>
 
 <template>
@@ -33,6 +37,8 @@ const { y } = useWindowScroll()
         class="flex gap-4 overflow-hidden before:content-['{'] after:content-['}']"
       >
         <input
+          v-model="keyword"
+          @keyup.enter="search(keyword)"
           type="search"
           autofocus
           placeholder="🔎 学习最前沿、实用的前端技术"

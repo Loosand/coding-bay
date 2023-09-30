@@ -1,7 +1,8 @@
 <script setup>
 defineProps({
   item: {
-    type: Object
+    type: Object,
+    required: true
   }
 })
 
@@ -14,34 +15,47 @@ const handleLink = (url) => {
 <template>
   <div
     @click="handleLink(item.enUrl ? item.enUrl : item.zhUrl)"
-    class="shadow-mine flex h-fit w-64 cursor-pointer flex-col justify-around overflow-hidden rounded-xl bg-white outline outline-1 transition-all hover:shadow-2xl"
+    class="hover:[&>a] relative w-40 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-md transition-all hover:shadow-2xl md:w-52 lg:w-64"
   >
-    <div class="flex w-full items-center gap-4 p-5">
-      <img v-if="item.icon" class="h-7 w-7 self-start" :src="item.icon" alt="" />
-      <h1 :class="item.titleColor" class="text-2xl font-bold">{{ item.title }}</h1>
+    <!-- CONTENT -->
+    <div class="flex flex-col gap-2 p-5 md:gap-3 lg:gap-4">
+      <div class="flex gap-4">
+        <img
+          v-if="item.icon"
+          class="h-4 w-4 self-center md:h-5 md:w-5 lg:h-7 lg:w-7 lg:self-start"
+          :src="item.icon"
+          alt="icon"
+        />
+        <h1 :class="item.titleColor" class="text-lg font-bold md:text-xl lg:text-2xl">
+          {{ item.title }}
+        </h1>
+      </div>
+
+      <h2 class="text-xs font-semibold text-gray-500 md:text-base md:text-black lg:text-lg">
+        {{ item.subTitle }}
+      </h2>
+
+      <p v-if="item.intro" class="hidden h-32 text-sm text-gray-500 md:block md:h-fit">
+        {{ item.intro }}
+      </p>
     </div>
 
-    <h2 class="px-5 text-lg font-semibold">{{ item.subTitle }}</h2>
-
-    <p v-if="item.intro" class="px-5 text-sm text-gray-500">{{ item.intro }}</p>
-
-    <div class="flex h-20 pt-6 text-lg font-semibold">
+    <!-- LINK -->
+    <div class="absolute inset-0 flex h-full text-xl font-semibold md:text-2xl">
       <a
         v-if="item.zhUrl"
         :class="{ 'flex-1': item.zhUrl }"
         @click="handleLink(item.zhUrl)"
-        class="flex w-1/2 items-center justify-center rounded-es-xl bg-blue-400 px-4 hover:bg-blue-500"
+        class="flex h-full w-1/2 items-center justify-center bg-red-400 px-4 opacity-0 transition-opacity hover:opacity-100"
         >中文</a
       >
       <a
         v-if="item.enUrl"
         :class="{ 'flex-1 ': item.enUrl }"
         @click="handleLink(item.enUrl)"
-        class="flex w-1/2 items-center justify-center bg-green-400 px-4 hover:bg-green-500"
+        class="flex w-1/2 items-center justify-center bg-red-400 px-4 opacity-0 hover:opacity-100"
         >English</a
       >
     </div>
   </div>
 </template>
-
-<style scoped></style>

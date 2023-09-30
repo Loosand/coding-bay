@@ -18,8 +18,7 @@ export const useJsStore = defineStore('js', () => {
       title: 'TypeScript',
       titleColor: 'text-black',
       subTitle: 'TypeScript文档',
-      intro:
-        'TypeScript具有类型系统，且是JavaScript的超集。 它可以编译成普通的JavaScript代码。 TypeScript支持任意浏览器，任意环境，任意系统并且是开源的。',
+      intro: 'TypeScript具有类型系统，且是JavaScript的超集。 ',
       enUrl: 'https://typescript.bootcss.com/index.html',
       zhUrl: 'https://www.typescriptlang.org/',
       icon: '/src/assets/icons/typescript.svg'
@@ -29,8 +28,7 @@ export const useJsStore = defineStore('js', () => {
       title: 'JQuery',
       titleColor: 'text-black',
       subTitle: 'JQuery API文档',
-      intro:
-        'jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. ',
+      intro: 'jQuery is a fast, small, and feature-rich JavaScript library. ',
       enUrl: 'https://jquery.com/',
       zhUrl: 'https://jquery.cuishifeng.cn/index.html',
       icon: '/src/assets/icons/docs.svg'
