@@ -1,59 +1,20 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
+import { getCategoryAPI } from '@/api/node'
+
 export const useNavStore = defineStore(
   'nav',
   () => {
     let currentIndex = ref(1)
 
-    const items = [
-      {
-        id: 1,
-        name: 'CSS',
-        link: '/'
-      },
-      {
-        id: 2,
-        name: 'JS',
-        link: '/js'
-      },
-      {
-        id: 3,
-        name: 'Vue',
-        link: '/vue'
-      },
-      {
-        id: 4,
-        name: 'Node',
-        link: '/node'
-      },
-      {
-        id: 5,
-        name: 'Serve',
-        link: '/serve'
-      },
-      {
-        id: 6,
-        name: 'UI',
-        link: '/ui'
-      },
+    const items = ref([])
+    const getNav = async () => {
+      const res = await getCategoryAPI()
+      items.value = res.data
+    }
 
-      {
-        id: 7,
-        name: 'Tool',
-        link: '/tool'
-      },
-      {
-        id: 8,
-        name: 'Blog',
-        link: '/blog'
-      },
-      {
-        id: 9,
-        name: '综合',
-        link: '/common'
-      }
-    ]
+    getNav()
 
     const changeIndex = computed((index) => {
       currentIndex = index
@@ -62,6 +23,7 @@ export const useNavStore = defineStore(
     return {
       currentIndex,
       items,
+      // items: testStore.nodeList,
       changeIndex
     }
   },
@@ -80,13 +42,13 @@ export const useNavStore = defineStore(
 )
 
 export const useMenuStore = defineStore('menu', () => {
-  const ismenuOpen = ref(false)
+  const isMenuOpen = ref(false)
   const toggleMenu = () => {
-    ismenuOpen.value = !ismenuOpen.value
+    isMenuOpen.value = !isMenuOpen.value
   }
 
   return {
-    ismenuOpen,
+    isMenuOpen,
     toggleMenu
   }
 })

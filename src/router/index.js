@@ -12,6 +12,10 @@ const router = createRouter({
           component: () => import('@/views/CssView.vue')
         },
         {
+          path: '/css',
+          component: () => import('@/views/CssView.vue')
+        },
+        {
           path: '/blog',
           component: () => import('@/views/BlogView.vue')
         },

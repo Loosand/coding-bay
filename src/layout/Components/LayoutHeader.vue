@@ -1,13 +1,16 @@
 <script setup>
 import { useWindowScroll } from '@vueuse/core'
 import { useMenuStore } from '@/stores/nav'
+import { ref } from 'vue'
 
 const menuStore = useMenuStore()
 const { y } = useWindowScroll()
 
-const keyword = ''
+// const keyword = ''
+//
+// const search = (i) => {}
 
-const search = (i) => {}
+const mode = ref(true)
 
 const darkMode = () => {
   if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
@@ -20,17 +23,20 @@ const darkMode = () => {
 
   localStorage.theme = 'dark'
   localStorage.removeItem('theme')
+
+  mode.value = !mode.value // toggle mode
 }
 
 const lightMode = () => {
   document.documentElement.classList.remove('dark')
+  mode.value = !mode.value // toggle mode
 }
 </script>
 
 <template>
   <header
     :class="{ 'md:h-64 md:flex-col': y < 60 }"
-    class="z-50 flex h-20 w-full items-center justify-around gap-4 bg-gray-900 font-bold transition-all duration-300 md:h-24 md:justify-center"
+    class="relative z-40 flex h-20 w-full items-center justify-around gap-4 bg-gradient-to-r from-cyan-600 to-sky-600 font-bold transition-all duration-300 dark:bg-gradient-to-r dark:from-gray-900 dark:to-stone-900 dark:text-white md:h-24 md:justify-center"
   >
     <!-- MOBILE MENU ICON -->
     <i
@@ -68,9 +74,9 @@ const lightMode = () => {
     </div>
 
     <!--    -->
-    <button class="absolute right-32 top-28 hidden text-3xl md:block">
-      <i @click="lightMode" class="ri-sun-fill"></i>
-      <i @click="darkMode" class="ri-moon-fill"></i>
+    <button class="absolute right-32 mb-8 hidden text-4xl md:block">
+      <i v-show="mode" @click="darkMode" class="ri-sun-fill absolute"></i>
+      <i v-show="!mode" @click="lightMode" class="ri-moon-fill absolute"></i>
     </button>
   </header>
 </template>

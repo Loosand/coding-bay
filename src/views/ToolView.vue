@@ -1,8 +1,14 @@
 <script setup>
-import { reactive } from 'vue'
-import { ref } from 'vue'
+import Masonry from '@/components/Masonry.vue'
+import { useNodeStore } from '@/stores/node'
+
+const nodeStore = useNodeStore()
 </script>
 
-<template><div>TOOL</div></template>
-
-<style scoped></style>
+<template>
+  <div class="space-y-16 transition-all">
+    <div v-for="i in nodeStore.toolList" :key="i.id">
+      <Masonry :title="i.name" :store="i.children" />
+    </div>
+  </div>
+</template>

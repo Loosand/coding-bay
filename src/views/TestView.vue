@@ -1,19 +1,14 @@
 <script setup>
-import { useTestStore } from '@/stores/test'
 import Masonry from '@/components/Masonry.vue'
-import { ref } from 'vue'
+import { useNodeStore } from '@/stores/node'
 
-const nodeStore = useTestStore()
+const nodeStore = useNodeStore()
 </script>
 
 <template>
   <div class="space-y-16 transition-all">
-    <!--    <Masonry title="工程化" :store="nodeStore.engineering" />-->
-
-    <!--    <Masonry title="服务器" :store="nodeStore.node" />-->
-
-    <!--    <Masonry title="Tool" :store="nodeStore.tool" />-->
+    <div v-for="i in nodeStore.testList" :key="i.id">
+      <Masonry :title="i.name" :store="i.children" />
+    </div>
   </div>
 </template>
-
-<style scoped></style>

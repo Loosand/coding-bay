@@ -1,18 +1,14 @@
 <script setup>
-// import { useCssStore } from '@/stores/css'
 import Masonry from '@/components/Masonry.vue'
+import { useNodeStore } from '@/stores/node'
 
-// const cssStore = useCssStore()
+const nodeStore = useNodeStore()
 </script>
 
 <template>
   <div class="space-y-16 transition-all">
-    <Masonry title="Learn CSS" />
-
-    <Masonry title="Frame" />
-
-    <Masonry title="Tool" />
+    <div v-for="i in nodeStore.serverList" :key="i.id">
+      <Masonry :title="i.name" :store="i.children" />
+    </div>
   </div>
 </template>
-
-<style scoped></style>
