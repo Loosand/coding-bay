@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="space-y-12">
+  <section class="space-y-6">
     <h1 class="text-4xl font-bold dark:text-white">{{ title }}</h1>
 
     <div class="z-10 m-auto" transition-duration=".3s" gutter="16" v-masonry="containerId">

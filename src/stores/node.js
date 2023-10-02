@@ -12,11 +12,12 @@ export const useNodeStore = defineStore('node', () => {
   const nodeList = ref([])
   const uiList = ref([])
   const serverList = ref([])
-  const testList = ref([])
-  const maintainList = ref([])
+  // const testList = ref([])
+  // const maintainList = ref([])
   const toolList = ref([])
   const blogList = ref([])
   const commonList = ref([])
+  const assemblyList = ref([])
 
   const getCategory = async () => {
     const res = await getCategoryAPI()
@@ -29,11 +30,12 @@ export const useNodeStore = defineStore('node', () => {
     nodeList.value = res.data[4].children
     serverList.value = res.data[5].children
     uiList.value = res.data[6].children
-    testList.value = res.data[7].children
-    maintainList.value = res.data[8].children
-    toolList.value = res.data[9].children
-    blogList.value = res.data[10].children
-    commonList.value = res.data[11].children
+    // testList.value = res.data[7].children
+    // maintainList.value = res.data[7].children
+    toolList.value = res.data[7].children
+    blogList.value = res.data[8].children
+    commonList.value = res.data[9].children
+    assemblyList.value = res.data[10].children
   }
 
   onBeforeMount(() => {
@@ -50,10 +52,11 @@ export const useNodeStore = defineStore('node', () => {
     nodeList,
     serverList,
     uiList,
-    testList,
-    maintainList,
+    // testList,
+    // maintainList,
     toolList,
     blogList,
-    commonList
+    commonList,
+    assemblyList
   }
 })

@@ -7,7 +7,7 @@ const nodeStore = useNodeStore()
 
 <template>
   <div class="space-y-16 transition-all">
-    <div v-for="i in nodeStore.testList" :key="i.id">
+    <div v-for="i in nodeStore.assemblyList" :key="i.id">
       <Masonry :title="i.name" :store="i.children" />
     </div>
   </div>

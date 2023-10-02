@@ -1,5 +1,6 @@
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { defineStore } from 'pinia'
+// import { useWindowSize } from '@vueuse/core'
 
 import { getCategoryAPI } from '@/api/node'
 
@@ -41,14 +42,36 @@ export const useNavStore = defineStore(
   }
 )
 
-export const useMenuStore = defineStore('menu', () => {
-  const isMenuOpen = ref(false)
-  const toggleMenu = () => {
-    isMenuOpen.value = !isMenuOpen.value
-  }
+export const useMenuStore = defineStore(
+  'menu',
+  () => {
+    const isMenuOpen = ref(false)
 
-  return {
-    isMenuOpen,
-    toggleMenu
+    // const { width } = useWindowSize()
+    //
+    // if (width > 768) {
+    //   isMenuOpen.value = true
+    // }
+
+    const toggleMenu = () => {
+      isMenuOpen.value = !isMenuOpen.value
+    }
+
+    return {
+      isMenuOpen,
+      toggleMenu
+    }
   }
-})
+  // {
+  //   persist: {
+  //     enabled: true
+  //   },
+  //   strategies: [
+  //     {
+  //       key: 'menuOpen',
+  //       storage: localStorage,
+  //       paths: ['isMenuOpen']
+  //     }
+  //   ]
+  // }
+)

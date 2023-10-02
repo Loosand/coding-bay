@@ -30,31 +30,34 @@ const handleLink = (url) => {
         </h1>
       </div>
 
-      <h2
-        class="text-xs font-semibold text-gray-500 dark:text-gray-300 dark:text-white md:text-base md:text-black lg:text-lg"
-      >
+      <h2 class="text-xs font-semibold text-gray-600 dark:text-gray-400 md:text-base lg:text-lg">
         {{ item.sub_title }}
       </h2>
 
-      <p v-if="item.intro" class="hidden h-32 text-sm text-gray-500 md:block md:h-fit">
+      <p
+        v-if="item.intro"
+        class="hidden h-32 text-sm font-light text-gray-400 dark:text-gray-300 md:block md:h-fit"
+      >
         {{ item.intro }}
       </p>
     </div>
 
     <!-- LINK -->
-    <div class="absolute inset-0 flex h-full text-xl font-semibold md:text-2xl">
+    <div
+      class="absolute inset-0 flex h-full text-xl font-semibold text-white dark:text-black md:text-2xl"
+    >
       <a
         v-if="item.zh_url"
         :class="{ 'flex-1': item.zh_url }"
         @click="handleLink(item.zh_url)"
-        class="flex h-full w-1/2 items-center justify-center bg-red-500 px-4 opacity-0 transition-opacity hover:opacity-95"
+        class="flex h-full w-1/2 items-center justify-center bg-gray-700 px-4 opacity-0 transition-opacity hover:opacity-100 dark:bg-white"
         >中文</a
       >
       <a
         v-if="item.en_url"
         :class="{ 'flex-1 ': item.en_url }"
         @click="handleLink(item.en_url)"
-        class="flex w-1/2 items-center justify-center bg-red-500 px-4 opacity-0 hover:opacity-95"
+        class="flex w-1/2 items-center justify-center bg-gray-700 px-4 opacity-0 hover:opacity-100 dark:bg-white"
         >English</a
       >
     </div>

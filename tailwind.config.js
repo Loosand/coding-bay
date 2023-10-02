@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+      },
+      screens: {
+        navScreen: '1120px'
       }
     }
   },

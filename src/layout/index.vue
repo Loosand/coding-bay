@@ -14,5 +14,7 @@ export default defineComponent({
     <LayoutNav />
   </header>
 
-  <div class="ml-20 mr-5 pb-52 pt-28 md:ml-40 md:pt-[26rem] lg:pt-[23rem]"><RouterView /></div>
+  <div class="navScreen:pt-[22rem] ml-20 mr-5 pb-52 pt-28 md:ml-40 md:pt-[26rem] lg:pt-[26rem]">
+    <RouterView />
+  </div>
 </template>

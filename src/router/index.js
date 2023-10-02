@@ -16,28 +16,16 @@ const router = createRouter({
           component: () => import('@/views/CssView.vue')
         },
         {
-          path: '/blog',
-          component: () => import('@/views/BlogView.vue')
-        },
-        {
-          path: '/common',
-          component: () => import('@/views/CommonView.vue')
-        },
-        {
           path: '/js',
           component: () => import('@/views/JsView.vue')
         },
         {
-          path: '/tool',
-          component: () => import('@/views/ToolView.vue')
-        },
-        {
-          path: '/ui',
-          component: () => import('@/views/UiView.vue')
-        },
-        {
           path: '/vue',
           component: () => import('@/views/VueView.vue')
+        },
+        {
+          path: '/react',
+          component: () => import('@/views/ReactView.vue')
         },
         {
           path: '/node',
@@ -48,16 +36,24 @@ const router = createRouter({
           component: () => import('@/views/ServerView.vue')
         },
         {
-          path: '/react',
-          component: () => import('@/views/ReactView.vue')
+          path: '/ui',
+          component: () => import('@/views/UiView.vue')
         },
         {
-          path: '/maintain',
-          component: () => import('@/views/MaintainView.vue')
+          path: '/tool',
+          component: () => import('@/views/ToolView.vue')
         },
         {
-          path: '/test',
-          component: () => import('@/views/TestView.vue')
+          path: '/blog',
+          component: () => import('@/views/BlogView.vue')
+        },
+        {
+          path: '/common',
+          component: () => import('@/views/CommonView.vue')
+        },
+        {
+          path: '/assembly',
+          component: () => import('@/views/AssemblyView.vue')
         }
       ]
     }
