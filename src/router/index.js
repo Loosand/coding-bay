@@ -44,8 +44,16 @@ const router = createRouter({
           component: () => import('@/views/NodeView.vue')
         },
         {
-          path: '/serve',
+          path: '/server',
           component: () => import('@/views/ServerView.vue')
+        },
+        {
+          path: '/react',
+          component: () => import('@/views/ReactView.vue')
+        },
+        {
+          path: '/maintain',
+          component: () => import('@/views/MaintainView.vue')
         },
         {
           path: '/test',

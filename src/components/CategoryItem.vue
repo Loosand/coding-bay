@@ -47,14 +47,14 @@ const handleLink = (url) => {
         v-if="item.zh_url"
         :class="{ 'flex-1': item.zh_url }"
         @click="handleLink(item.zh_url)"
-        class="flex h-full w-1/2 items-center justify-center bg-red-400 px-4 opacity-0 transition-opacity hover:opacity-100"
+        class="flex h-full w-1/2 items-center justify-center bg-red-500 px-4 opacity-0 transition-opacity hover:opacity-95"
         >中文</a
       >
       <a
         v-if="item.en_url"
         :class="{ 'flex-1 ': item.en_url }"
         @click="handleLink(item.en_url)"
-        class="flex w-1/2 items-center justify-center bg-red-400 px-4 opacity-0 hover:opacity-100"
+        class="flex w-1/2 items-center justify-center bg-red-500 px-4 opacity-0 hover:opacity-95"
         >English</a
       >
     </div>
