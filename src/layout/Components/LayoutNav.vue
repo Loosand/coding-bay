@@ -30,7 +30,7 @@ const menuStore = useMenuStore()
   <!--  </nav>-->
 
   <!-- NAV-DESKTOP -->
-  <nav class="hidden md:block">
+  <nav class="hidden text-white md:block">
     <ul
       class="item-center flex flex-wrap justify-center gap-2 bg-red-500 px-8 pb-2 pt-3 font-bold md:flex md:text-xl lg:gap-4"
     >

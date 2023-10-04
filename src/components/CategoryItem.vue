@@ -13,15 +13,14 @@ const handleLink = (url) => {
 
 <template>
   <div
-    @click="handleLink(item.en_url ? item.en_url : item.zh_url)"
-    class="relative w-40 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-2xl dark:bg-gray-700 md:w-52 lg:w-64"
+    class="relative w-36 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-2xl dark:bg-gray-700 md:w-52 lg:w-64"
   >
     <!-- CONTENT -->
     <div class="flex flex-col gap-2 p-5 md:gap-3 lg:gap-4">
       <div class="flex gap-4">
         <img
           v-if="item.icon"
-          class="w-4 self-center md:w-5 lg:w-7 lg:self-start"
+          class="w-4 self-start md:w-5 lg:w-7 lg:self-start"
           :src="item.icon"
           :alt="item.name + ' icon'"
         />
@@ -30,7 +29,9 @@ const handleLink = (url) => {
         </h1>
       </div>
 
-      <h2 class="text-xs font-semibold text-gray-600 dark:text-gray-400 md:text-base lg:text-lg">
+      <h2
+        class="whitespace-break-spaces text-xs font-semibold text-gray-600 dark:text-gray-400 md:text-base lg:text-lg"
+      >
         {{ item.sub_title }}
       </h2>
 

@@ -4,13 +4,13 @@ const instance = axios.create({
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'
   },
-  baseURL: 'http://localhost:3000/api/',
+  // baseURL: 'http://43.143.98.167:3000/api',
+  baseURL: 'http://localhost:3000/api',
   timeout: 5000,
   responseType: 'json'
 })
 
 // 添加请求拦截器
-// 请求拦截器
 instance.interceptors.request.use(
   (config) => {
     // config 中有我们请求的信息

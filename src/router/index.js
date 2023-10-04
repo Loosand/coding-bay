@@ -56,6 +56,10 @@ const router = createRouter({
           component: () => import('@/views/AssemblyView.vue')
         }
       ]
+    },
+    {
+      path: '/search/:keyword',
+      component: () => import('@/views/SearchView.vue')
     }
   ]
 })

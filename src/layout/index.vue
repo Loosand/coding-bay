@@ -9,12 +9,12 @@ export default defineComponent({
 </script>
 
 <template>
-  <header class="fixed top-0 z-50 w-screen text-white">
+  <header class="fixed top-0 z-40 w-screen">
     <LayoutHeader />
     <LayoutNav />
   </header>
 
-  <div class="navScreen:pt-[22rem] ml-20 mr-5 pb-52 pt-28 md:ml-40 md:pt-[26rem] lg:pt-[26rem]">
+  <div class="ml-8 mr-5 pb-52 pt-28 md:ml-36 md:pt-[26rem] lg:pt-[26rem] navScreen:pt-[22rem]">
     <RouterView />
   </div>
 </template>

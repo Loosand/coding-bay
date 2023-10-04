@@ -1,17 +1,16 @@
 <script setup>
+import { ref } from 'vue'
 import { useWindowScroll } from '@vueuse/core'
 import { useMenuStore } from '@/stores/nav'
-import { ref } from 'vue'
+import { useSearchStore } from '@/stores/search'
 
 const menuStore = useMenuStore()
+const searchStore = useSearchStore()
 const { y } = useWindowScroll()
+const { keyword, search } = searchStore
 
-const keyword = ''
-
-const search = (i) => {}
-
+// 黑暗模式
 const mode = ref(true)
-
 const darkMode = () => {
   if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
     document.documentElement.classList.add('dark')
@@ -26,7 +25,6 @@ const darkMode = () => {
 
   mode.value = !mode.value // toggle mode
 }
-
 const lightMode = () => {
   document.documentElement.classList.remove('dark')
   mode.value = !mode.value // toggle mode
@@ -36,7 +34,7 @@ const lightMode = () => {
 <template>
   <header
     :class="{ 'md:h-64 md:flex-col': y < 60 }"
-    class="relative z-40 flex h-20 items-center justify-around gap-4 bg-gray-800 font-bold shadow-md transition-all duration-300 dark:bg-gray-900 dark:text-white md:h-24 md:justify-center md:bg-gray-900 md:shadow-none dark:md:bg-gradient-to-r dark:md:from-gray-900 dark:md:to-stone-900"
+    class="relative flex h-20 items-center justify-around gap-4 bg-gray-800 font-bold text-white shadow-lg transition-all duration-300 dark:bg-gray-900 dark:text-white md:h-24 md:justify-center md:bg-gray-900 md:shadow-none dark:md:bg-gradient-to-r dark:md:from-gray-900 dark:md:to-stone-900"
   >
     <!-- MOBILE MENU ICON -->
     <i
