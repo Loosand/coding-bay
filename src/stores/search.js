@@ -9,8 +9,8 @@ export const useSearchStore = defineStore('search', () => {
   const search = async (key) => {
     const res = await getSearchAPI(key)
     searchList.value = res.data
-    await route.push('/search/' + key)
     keyword.value = key
+    await route.push('/search/' + key)
   }
 
   return {

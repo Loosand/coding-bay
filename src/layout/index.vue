@@ -1,9 +1,9 @@
-<script>
+<script setup>
 import LayoutHeader from '@/layout/Components/LayoutHeader.vue'
 import LayoutNav from '@/layout/Components/LayoutNav.vue'
 import { defineComponent } from 'vue'
 
-export default defineComponent({
+defineComponent({
   components: { LayoutNav, LayoutHeader }
 })
 </script>

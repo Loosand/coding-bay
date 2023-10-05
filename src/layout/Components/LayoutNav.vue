@@ -54,7 +54,7 @@ const menuStore = useMenuStore()
   </nav>
 
   <!-- MENU-MOBILE -->
-  <nav v-show="menuStore.isMenuOpen" class="block transition md:hidden">
+  <nav v-show="menuStore.isMenuOpen" class="block text-white transition md:hidden">
     <ul class="item-center flex flex-col flex-wrap gap-3 bg-gray-600 px-8 py-4 font-bold">
       <li
         v-for="i in navStore.items"
