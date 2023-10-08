@@ -1,5 +1,4 @@
 import '@/assets/tailwind.css'
-import 'remixicon/fonts/remixicon.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

@@ -4,6 +4,7 @@ import CategoryItem from '@/components/CategoryItem.vue'
 import { useSearchStore } from '@/stores/search'
 import LayoutHeader from '@/layout/Components/LayoutHeader.vue'
 import router from '@/router'
+
 const { keyword, searchList } = useSearchStore()
 
 const nodeStore = useNodeStore()

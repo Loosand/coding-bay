@@ -16,7 +16,6 @@
     "axios": "^1.5.1",
     "pinia": "^2.1.6",
     "pinia-plugin-persist": "^1.0.0",
-    "remixicon": "^3.5.0",
     "vue": "^3.3.4",
     "vue-masonry": "^0.16.0",
     "vue-router": "^4.2.4"
