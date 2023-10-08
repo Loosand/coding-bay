@@ -30,20 +30,20 @@ const menuStore = useMenuStore()
   <!--  </nav>-->
 
   <!-- NAV-DESKTOP -->
-  <nav class="hidden text-white md:block">
+  <nav class="hidden text-lg text-white md:block">
     <ul
-      class="item-center flex flex-wrap justify-center gap-2 bg-red-500 px-8 pb-2 pt-3 font-bold md:flex md:text-xl lg:gap-4"
+      class="item-center flex flex-wrap justify-center gap-2 bg-red-500 px-8 pb-2 pt-3 font-bold md:flex lg:gap-4"
     >
       <li
         v-for="i in navStore.items"
         key="i.id"
-        class="cursor-pointer rounded-md text-xl hover:text-4xl"
+        class="cursor-pointer rounded-md"
         :class="{ current: navStore.currentIndex === i.id }"
         @click="navStore.currentIndex = i.id"
       >
         <keep-alive>
           <router-link
-            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 text-xl hover:bg-white hover:text-black hover:dark:bg-gray-900 hover:dark:text-white last:md:px-8"
+            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 hover:bg-white hover:text-black hover:dark:bg-gray-900 hover:dark:text-white last:md:px-8"
             :to="i.link"
             >{{ i.name }}</router-link
           >
@@ -59,7 +59,7 @@ const menuStore = useMenuStore()
       <li
         v-for="i in navStore.items"
         key="i.id"
-        class="cursor-pointer rounded-md text-xl transition hover:bg-white hover:text-black dark:hover:bg-gray-800 dark:hover:text-white"
+        class="cursor-pointer rounded-md transition hover:bg-white hover:text-black dark:hover:bg-gray-800 dark:hover:text-white"
         :class="{ current_mobile: navStore.currentIndex === i.id }"
         @click="navStore.currentIndex = i.id"
       >
@@ -97,6 +97,6 @@ const menuStore = useMenuStore()
 }
 
 .current_mobile {
-  @apply bg-white text-2xl text-black dark:bg-gray-800 dark:text-white;
+  @apply bg-white text-black dark:bg-gray-800 dark:text-white;
 }
 </style>

@@ -13,40 +13,33 @@ const handleLink = (url) => {
 
 <template>
   <div
-    class="relative w-36 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-2xl dark:bg-gray-700 md:w-52 lg:w-64"
+    class="relative w-60 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-2xl dark:bg-gray-700 md:w-64"
   >
     <!-- CONTENT -->
-    <div class="flex flex-col gap-2 p-5 md:gap-3 lg:gap-4">
+    <div class="flex flex-col gap-3 p-5">
       <div class="flex gap-4">
         <img
           v-if="item.icon"
-          class="w-4 self-start md:w-5 lg:w-7 lg:self-start"
+          class="my-auto w-6 lg:self-start"
           :src="item.icon"
           :alt="item.name + ' icon'"
         />
-        <h1 :class="item.color" class="text-lg font-bold dark:text-white md:text-xl lg:text-2xl">
+        <h1 class="text-xl font-bold dark:text-white">
           {{ item.name }}
         </h1>
       </div>
 
-      <h2
-        class="whitespace-break-spaces text-xs font-semibold text-gray-600 dark:text-gray-400 md:text-base lg:text-lg"
-      >
+      <h2 class="whitespace-break-spaces font-semibold text-sky-600 dark:text-gray-400">
         {{ item.sub_title }}
       </h2>
 
-      <p
-        v-if="item.intro"
-        class="hidden h-32 text-sm font-light text-gray-400 dark:text-gray-300 md:block md:h-fit"
-      >
+      <p v-if="item.intro" class="hidden h-fit text-gray-400 dark:text-gray-300 md:block">
         {{ item.intro }}
       </p>
     </div>
 
     <!-- LINK -->
-    <div
-      class="absolute inset-0 flex h-full text-xl font-semibold text-white dark:text-black md:text-2xl"
-    >
+    <div class="absolute inset-0 flex h-full font-semibold text-white dark:text-black">
       <a
         v-if="item.zh_url"
         :class="{ 'flex-1': item.zh_url }"

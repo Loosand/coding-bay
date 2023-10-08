@@ -15,7 +15,7 @@ const nodeStore = useNodeStore()
       <LayoutHeader class="md:shadow-lg" />
       <i
         @click="router.back()"
-        class="ri-arrow-go-back-line absolute inset-0 left-5 top-5 h-10 w-10 cursor-pointer text-4xl font-bold text-white hover:text-sky-600 md:left-10 md:top-7"
+        class="ri-arrow-go-back-line absolute inset-0 left-5 top-5 hidden h-10 w-10 cursor-pointer text-4xl font-bold text-white hover:text-sky-600 md:left-10 md:top-7 md:block"
       ></i>
     </div>
   </div>

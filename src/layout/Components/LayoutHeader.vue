@@ -46,16 +46,16 @@ const lightMode = () => {
     <!--TITLE -->
     <h1
       :class="{ 'justify-items-starts': y > 60, 'md:text-6xl': y < 60 }"
-      class="hidden text-3xl dark:text-red-500 md:block md:text-3xl"
+      class="hidden text-3xl dark:text-red-500 md:block"
     >
       <span class="font-light">Cod</span>ing Bay
     </h1>
 
     <!-- SEARCH INPUT -->
-    <div class="flex items-center gap-4 pb-1 text-5xl">
+    <div class="flex items-center gap-4 pb-1">
       <div
-        :class="{ 'flex-col before:hidden after:hidden': y > 60 }"
-        class="flex gap-4 overflow-hidden before:content-['{'] after:content-['}']"
+        :class="{ 'flex-col md:before:hidden md:after:hidden': y > 60 }"
+        class="flex gap-4 overflow-hidden text-5xl before:hidden before:content-['{'] after:hidden after:content-['}'] md:before:block md:after:block"
       >
         <input
           v-model="keyword"
@@ -66,13 +66,13 @@ const lightMode = () => {
           autocomplete="off"
           spellcheck="false"
           role="combobox"
-          class="mt-2 w-72 rounded-sm px-3 py-2 text-base font-semibold text-black shadow-md outline-white focus:outline-black dark:bg-gray-900 dark:text-white dark:outline dark:focus:outline-white"
+          class="mt-2 w-80 rounded-sm px-3 py-2 text-base font-semibold text-black shadow-md outline-white focus:outline-black dark:bg-gray-900 dark:text-white dark:outline dark:focus:outline-white"
         />
       </div>
     </div>
 
     <!-- Dark Mode  -->
-    <button class="absolute right-20 mb-9 hidden text-4xl md:right-32 md:mb-8 md:block">
+    <button class="absolute right-32 mb-9 hidden text-4xl md:block">
       <i v-show="mode" @click="darkMode" class="ri-sun-fill absolute"></i>
       <i v-show="!mode" @click="lightMode" class="ri-moon-fill absolute"></i>
     </button>

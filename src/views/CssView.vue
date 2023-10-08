@@ -127,7 +127,7 @@ const toggleFormShow = () => {
   <!--  </div>-->
   <div class="space-y-16 transition-all">
     <div v-for="i in nodeStore.cssList" :key="i.id">
-      <Masonry :title="i.name" :store="i.children" />
+      <Masonry :title="i.name" :id="i.id" :store="i.children" />
     </div>
   </div>
 </template>
