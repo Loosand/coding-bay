@@ -37,11 +37,16 @@ const lightMode = () => {
     class="relative flex h-20 items-center justify-around gap-4 bg-gray-800 font-bold text-white shadow-lg transition-all duration-300 dark:bg-gray-900 dark:text-white md:h-24 md:justify-center md:bg-gray-900 md:shadow-none dark:md:bg-gradient-to-r dark:md:from-gray-900 dark:md:to-stone-900"
   >
     <!-- MOBILE MENU ICON -->
-    <i
-      :class="menuStore.isMenuOpen ? 'ri-close-line' : 'ri-menu-line'"
+    <img
+      :src="
+        menuStore.isMenuOpen
+          ? 'https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/close.svg'
+          : 'https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/menu.svg'
+      "
       @click="menuStore.toggleMenu()"
-      class="text-4xl md:hidden"
-    ></i>
+      class="md:hidden"
+      alt="menu icon"
+    />
 
     <!--TITLE -->
     <h1
@@ -72,9 +77,25 @@ const lightMode = () => {
     </div>
 
     <!-- Dark Mode  -->
-    <button class="absolute right-32 mb-9 hidden text-4xl md:block">
-      <i v-show="mode" @click="darkMode" class="ri-sun-fill absolute"></i>
-      <i v-show="!mode" @click="lightMode" class="ri-moon-fill absolute"></i>
+    <button class="absolute right-32 hidden md:block">
+      <img
+        src="https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/sun.svg"
+        v-show="mode"
+        @click="darkMode"
+        alt="light mode"
+      />
+      <img
+        src="https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/moon.svg"
+        v-show="!mode"
+        @click="lightMode"
+        alt="dark mode"
+      />
     </button>
   </header>
 </template>
+
+<style scoped>
+img {
+  @apply w-10;
+}
+</style>
