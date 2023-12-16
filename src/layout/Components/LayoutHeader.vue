@@ -1,13 +1,17 @@
 <script setup>
-import { ref } from 'vue'
-import { useWindowScroll } from '@vueuse/core'
+import { onMounted, ref } from 'vue'
+import { useWindowScroll, useWindowSize } from '@vueuse/core'
 import { useMenuStore } from '@/stores/nav'
 import { useSearchStore } from '@/stores/search'
 
 const menuStore = useMenuStore()
 const searchStore = useSearchStore()
 const { y } = useWindowScroll()
-const { keyword, search } = searchStore
+const { width } = useWindowSize()
+
+const { updateKeyword } = searchStore
+
+const keyword = ref('')
 
 // 黑暗模式
 const mode = ref(true)
@@ -29,6 +33,14 @@ const lightMode = () => {
   document.documentElement.classList.remove('dark')
   mode.value = !mode.value // toggle mode
 }
+
+const search = ref(null)
+
+onMounted(() => {
+  if (width.value > 768) {
+    search.value.focus()
+  }
+})
 </script>
 
 <template>
@@ -63,15 +75,15 @@ const lightMode = () => {
         class="flex gap-4 overflow-hidden text-5xl before:hidden before:content-['{'] after:hidden after:content-['}'] md:before:block md:after:block"
       >
         <input
+          ref="search"
           v-model="keyword"
-          @keyup.enter="search(keyword)"
+          @keyup.enter="updateKeyword(keyword)"
           type="search"
-          autofocus
-          placeholder="🔎 学习最前沿、实用的前端技术"
+          placeholder="🔎 学习前沿、实用的前端技术"
           autocomplete="off"
           spellcheck="false"
           role="combobox"
-          class="mt-2 w-80 rounded-sm px-3 py-2 text-base font-semibold text-black shadow-md outline-white focus:outline-black dark:bg-gray-900 dark:text-white dark:outline dark:focus:outline-white"
+          class="mt-2 w-80 rounded-full px-3 py-2 indent-2 text-base font-semibold text-black shadow-md focus:outline-sky-600 dark:bg-gray-900 dark:text-white dark:outline dark:focus:outline-white md:rounded-none"
         />
       </div>
     </div>

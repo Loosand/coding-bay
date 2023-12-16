@@ -10,7 +10,8 @@ export default {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans]
       },
       screens: {
-        navScreen: '1212px'
+        1212: '1212px',
+        1362: '1362px'
       }
     }
   },

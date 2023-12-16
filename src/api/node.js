@@ -6,3 +6,10 @@ export const getCategoryAPI = () => {
     method: 'get'
   })
 }
+
+export const getAllNodeAPI = () => {
+  return request({
+    url: '/node/all',
+    method: 'get'
+  })
+}

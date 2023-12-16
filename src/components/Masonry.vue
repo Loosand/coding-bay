@@ -17,7 +17,6 @@ defineProps({
 <template>
   <section class="space-y-6">
     <h1 class="text-3xl font-bold dark:text-white">
-      {{ id }}
       {{ title }}
     </h1>
 

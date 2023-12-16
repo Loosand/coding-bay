@@ -1,29 +1,76 @@
 <script setup>
-import { useNodeStore } from '@/stores/node'
 import CategoryItem from '@/components/CategoryItem.vue'
-import { useSearchStore } from '@/stores/search'
 import LayoutHeader from '@/layout/Components/LayoutHeader.vue'
 import router from '@/router'
+import { useAllNodeStore } from '@/stores/node'
+import { useSearchStore } from '@/stores/search'
+import { useMenuStore } from '@/stores/nav'
+import { useNavStore } from '@/stores/nav'
 
-const { keyword, searchList } = useSearchStore()
+const menuStore = useMenuStore()
+const navStore = useNavStore()
 
-const nodeStore = useNodeStore()
+const allNodeStore = useAllNodeStore()
+const searchStore = useSearchStore()
 </script>
 
 <template>
-  <div class="fixed top-0 z-40 w-screen">
+  <header class="fixed top-0 z-40 w-screen">
     <div class="relative">
       <LayoutHeader class="md:shadow-lg" />
-      <i
+      <!-- MENU-MOBILE -->
+      <nav v-show="menuStore.isMenuOpen" class="block text-white transition md:hidden">
+        <ul class="item-center flex flex-col flex-wrap gap-3 bg-gray-600 px-8 py-4 font-bold">
+          <li
+            v-for="i in navStore.items"
+            key="i.id"
+            class="cursor-pointer rounded-md transition hover:bg-white hover:text-black dark:hover:bg-gray-800 dark:hover:text-white"
+            :class="{ current_mobile: navStore.currentIndex === i.id }"
+            @click="navStore.currentIndex = i.id"
+          >
+            <keep-alive
+              ><router-link
+                class="flex h-12 items-center justify-center whitespace-nowrap px-6 last:md:px-8"
+                :to="i.link"
+                @click="menuStore.toggleMenu()"
+                >{{ i.name }}</router-link
+              ></keep-alive
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <svg
+        class="absolute inset-0 m-16 hidden w-16 cursor-pointer fill-white hover:fill-sky-600 md:block"
         @click="router.back()"
-        class="ri-arrow-go-back-line absolute inset-0 left-5 top-5 hidden h-10 w-10 cursor-pointer text-4xl font-bold text-white hover:text-sky-600 md:left-10 md:top-7 md:block"
-      ></i>
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"
+        ></path>
+      </svg>
     </div>
+  </header>
+
+  <!-- 未搜索 -->
+  <div
+    v-if="!allNodeStore.searchResult"
+    class="m-auto w-fit pt-28 text-4xl font-bold dark:text-white md:pt-72"
+  >
+    <div v-if="searchStore.keywordPinia">
+      <h1>
+        没有找到关于<span class="px-3 text-red-500">{{ searchStore.keywordPinia }}</span
+        >的搜索结果
+      </h1>
+    </div>
+    <div v-else>请搜索</div>
   </div>
 
-  <div class="ml-8 mr-5 h-[1000px] space-y-6 pt-28 md:ml-36 md:pt-72">
+  <!-- 已搜索 -->
+  <div v-else class="ml-8 mr-5 h-[1000px] space-y-6 pt-28 md:ml-36 md:pt-72">
     <h1 class="text-4xl font-bold dark:text-white">
-      <span class="px-3 text-red-500">{{ keyword }}</span
+      <span class="px-3 text-red-500">{{ searchStore.keywordPinia }}</span
       >的搜索结果
     </h1>
 
@@ -31,8 +78,8 @@ const nodeStore = useNodeStore()
       <CategoryItem
         class="mb-5"
         v-masonry-tile
-        v-for="(i, index) in searchList"
-        :key="index"
+        v-for="i in allNodeStore.filterNodes"
+        :key="i.id"
         :item="i"
       >
       </CategoryItem>

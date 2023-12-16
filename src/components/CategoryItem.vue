@@ -33,9 +33,9 @@ const handleLink = (url) => {
         {{ item.sub_title }}
       </h2>
 
-      <p v-if="item.intro" class="hidden h-fit text-gray-400 dark:text-gray-300 md:block">
-        {{ item.intro }}
-      </p>
+      <!--      <p v-if="item.intro" class="hidden h-fit text-gray-400 dark:text-gray-300 md:block">-->
+      <!--        {{ item.intro }}-->
+      <!--      </p>-->
     </div>
 
     <!-- LINK -->

@@ -4,8 +4,8 @@ const instance = axios.create({
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'
   },
-  baseURL: 'http://43.143.98.167:3000',
-  // baseURL: 'http://localhost:3000',
+  // baseURL: 'http://43.143.98.167:3000',
+  baseURL: 'http://localhost:3000',
   timeout: 5000,
   responseType: 'json'
 })

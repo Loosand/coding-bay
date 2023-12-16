@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        @apply text-[10px] md:text-[12px] lg:text-[14px]
+    }
+}
+
 @layer utilities {
     .bg{
         background-color: #f1f5f9;
@@ -33,11 +39,5 @@
         border-bottom: solid 3px #ffffff;
         height: 3px;
         width: 18px;  /* 设置小图标的大小 */
-    }
-}
-
-@layer base {
-    html {
-        @apply text-sm md:text-base lg:text-lg
     }
 }

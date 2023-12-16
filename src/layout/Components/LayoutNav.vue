@@ -6,29 +6,6 @@ const menuStore = useMenuStore()
 </script>
 
 <template>
-  <!--  <nav v-show="!menuStore.isMenuOpen">-->
-  <!--    <ul-->
-  <!--      class="item-center flex flex-col flex-wrap justify-center gap-2 bg-gray-600 px-8 py-3 font-bold shadow-xl md:flex md:flex-row md:bg-red-500 md:pb-2 md:text-xl lg:gap-4"-->
-  <!--    >-->
-  <!--      <li-->
-  <!--        v-for="i in navStore.items"-->
-  <!--        key="i.id"-->
-  <!--        class="cursor-pointer rounded-md text-xl hover:text-4xl"-->
-  <!--        :class="{ current: navStore.currentIndex === i.id }"-->
-  <!--        @click="(navStore.currentIndex = i.id), menuStore.toggleMenu()"-->
-  <!--      >-->
-  <!--        <keep-alive>-->
-  <!--          <router-link-->
-  <!--            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 text-xl hover:bg-white hover:text-black hover:dark:bg-gray-900 hover:dark:text-white last:md:px-8"-->
-  <!--            :to="i.link"-->
-  <!--            >{{ i.name }}</router-link-->
-  <!--          >-->
-  <!--        </keep-alive>-->
-  <!--      </li>-->
-  <!--    </ul>-->
-  <!--    <div class="bg bg-b hidden md:block"></div>-->
-  <!--  </nav>-->
-
   <!-- NAV-DESKTOP -->
   <nav class="hidden text-lg text-white md:block">
     <ul

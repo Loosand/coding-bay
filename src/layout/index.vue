@@ -14,7 +14,7 @@ defineComponent({
     <LayoutNav />
   </header>
 
-  <div class="md: ml-8 mr-5 pb-10 pt-28 md:ml-36 md:pt-[26rem] lg:pt-[28rem] navScreen:pt-[24rem]">
+  <div class="1362:pt-[24rem] 1212:pt-[28rem] ml-8 mr-5 pb-10 pt-28 md:ml-36 md:pt-[26rem]">
     <RouterView />
   </div>
 </template>
