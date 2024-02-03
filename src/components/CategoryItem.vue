@@ -13,7 +13,7 @@ const handleLink = (url) => {
 
 <template>
   <div
-    class="relative w-60 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-2xl dark:bg-gray-700 md:w-64"
+    class="relative w-60 cursor-pointer overflow-hidden rounded-2xl bg-white shadow-lg transition-all hover:shadow-2xl md:w-64 dark:bg-gray-700"
   >
     <!-- CONTENT -->
     <div class="flex flex-col gap-3 p-5">

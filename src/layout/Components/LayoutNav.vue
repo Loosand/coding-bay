@@ -20,7 +20,7 @@ const menuStore = useMenuStore()
       >
         <keep-alive>
           <router-link
-            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 hover:bg-white hover:text-black hover:dark:bg-gray-900 hover:dark:text-white last:md:px-8"
+            class="flex h-12 items-center justify-center whitespace-nowrap rounded-md px-6 hover:bg-white hover:text-black last:md:px-8 hover:dark:bg-gray-900 hover:dark:text-white"
             :to="i.link"
             >{{ i.name }}</router-link
           >
