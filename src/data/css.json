@@ -1,0 +1,463 @@
+[
+  {
+    "id": 1,
+    "name": "Learn CSS",
+    "order": 1.1,
+    "children": [
+      {
+        "id": 1,
+        "name": "MDN",
+        "sub_title": "前端开发教程与文档",
+        "type": "docs",
+        "zh_url": "https://developer.mozilla.org/zh-CN/docs/Web/CSS",
+        "en_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/docs.svg",
+        "intro": "Documenting web technologies, including CSS, HTML, and JavaScript, since 2005.",
+        "order": 1.001
+      },
+      {
+        "id": 2,
+        "name": "CSS Reference",
+        "sub_title": "CSS 可视化文档",
+        "type": "docs",
+        "zh_url": "https://blog.poetries.top/css-reference/",
+        "en_url": "https://cssreference.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/cssreference.png",
+        "intro": null,
+        "order": 1.002
+      },
+      {
+        "id": 3,
+        "name": "CSS Portal",
+        "sub_title": "CSS 可视化文档",
+        "type": "docs",
+        "zh_url": null,
+        "en_url": "https://www.cssportal.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/cssportal.png",
+        "intro": "CSS 可视化文档",
+        "order": 1.003
+      },
+      {
+        "id": 4,
+        "name": "HTML Reference",
+        "sub_title": "HTML 可视化文档",
+        "type": "docs",
+        "zh_url": null,
+        "en_url": "https://htmlreference.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/htmlreference.png",
+        "intro": "Learn by example: htmlreference.io is a free guide to HTML. It features all elements and attributes.",
+        "order": 1.004
+      },
+      {
+        "id": 5,
+        "name": "HTML5元素周期表",
+        "sub_title": "Periodic Table of the HTML5 Elements",
+        "type": "docs",
+        "zh_url": null,
+        "en_url": "https://www.xuanfengge.com/funny/html5/element/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": 1.005
+      },
+      {
+        "id": 12,
+        "name": "Web内容无障碍指南",
+        "sub_title": "涵盖了使Web内容更易于访问的各种建议",
+        "type": "docs",
+        "zh_url": "https://www.w3.org/Translations/WCAG21-zh/#abstract",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/docs.svg",
+        "intro": "遵循这些准则将使更多残疾人更容易获取网站内容,但不会满足这些残疾用户的所有需求。",
+        "order": 1.007
+      },
+      {
+        "id": 175,
+        "name": "HTML & CSS 风格指南",
+        "sub_title": "编写一致、灵活和可持续的 HTML 和 CSS 代码的规范。",
+        "type": null,
+        "zh_url": "https://codeguide.bootcss.com",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/html.svg",
+        "intro": null,
+        "order": 1.008
+      },
+      {
+        "id": 177,
+        "name": "响应式设计指南",
+        "sub_title": "六个案例学会响应式布局",
+        "type": null,
+        "zh_url": "https://www.bilibili.com/video/BV1ov411k7sm/?vd_source=1a2990f87eed718ac5d635afd7f1ab3f",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/bilibili.svg",
+        "intro": null,
+        "order": 1.01
+      },
+      {
+        "id": 85,
+        "name": "CodingStartup 起码课",
+        "sub_title": "热爱Web技术，教学相长。我是Steven，一起加油！",
+        "type": "bilibili",
+        "zh_url": "https://space.bilibili.com/451368848?spm_id_from=333.999.0.0",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/bilibili.svg",
+        "intro": null,
+        "order": 1.101
+      },
+      {
+        "id": 11,
+        "name": "CSS3系统课",
+        "sub_title": "CSS3 & SASS 进阶课程",
+        "type": "video",
+        "zh_url": "",
+        "en_url": "https://www.udemy.com/course/advanced-css-and-sass/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/video.svg",
+        "intro": "您将学习复杂的 CSS 动画、高级响应式设计技术、flexbox 布局、Sass、CSS 架构、基本 CSS 概念等等。",
+        "order": 1.701
+      },
+      {
+        "id": 10,
+        "name": "HTML&CSS系统课",
+        "sub_title": "使用 HTML 和 CSS 构建响应式真实世界网站",
+        "type": "video",
+        "zh_url": "",
+        "en_url": "https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/video.svg",
+        "intro": "最实用、最容易应用的网页设计和开发课程。",
+        "order": 1.702
+      },
+      {
+        "id": 77,
+        "name": "现代CSS",
+        "sub_title": "跟着前手淘前端技术专家一起进阶 CSS",
+        "type": "juejing",
+        "zh_url": "https://juejin.cn/book/7223230325122400288?utm_source=profile_book",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": null,
+        "order": 1.802
+      },
+      {
+        "id": 78,
+        "name": "防御式 CSS 精讲",
+        "sub_title": "警惕简单代码，让你的 CSS 更具防御性",
+        "type": "juejing",
+        "zh_url": "https://juejin.cn/book/7199571709102391328?utm_source=profile_book",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": null,
+        "order": 1.803
+      },
+      {
+        "id": 213,
+        "name": "CSS 技术揭秘与实战通关",
+        "sub_title": "重学 CSS，由浅及深，多重进阶技巧为高频 CSS 问题提供最优解\n",
+        "type": null,
+        "zh_url": "https://juejin.cn/book/7052964245259943948?enter_from=course_center&utm_source=course_center",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": null,
+        "order": 1.804
+      },
+      {
+        "id": 79,
+        "name": "现代 Web 布局",
+        "sub_title": "结合 CSS 新特性，构建创造性的 Web 布局",
+        "type": "juejing",
+        "zh_url": "https://juejin.cn/book/7161370789680250917?utm_source=profile_book",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": null,
+        "order": 1.805
+      },
+      {
+        "id": 54,
+        "name": "响应式布局基础知识",
+        "sub_title": "关于移动端适配，你必须要知道的",
+        "type": "docs",
+        "zh_url": "https://juejin.cn/post/6844903845617729549",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": "",
+        "order": 1.806
+      },
+      {
+        "id": 6,
+        "name": "CSS世界",
+        "sub_title": "CSS2圣经",
+        "type": "book",
+        "zh_url": "https://weread.qq.com/web/bookDetail/00932ab0715a41e90093ab5",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/book.svg",
+        "intro": "本书从前端开发人员的需求出发，以“流”为线索，从结构、内容到美化装饰等方面，全面且深入地讲解前端开发人员必须了解和掌握的大量的CSS知识点。",
+        "order": 1.901
+      },
+      {
+        "id": 7,
+        "name": "CSS新世界",
+        "sub_title": "CSS3圣经",
+        "type": "book",
+        "zh_url": "https://weread.qq.com/web/bookDetail/13c32c90726fa07d13c0072",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/book.svg",
+        "intro": "这是一本关于CSS的进阶读物，专门讲CSS3及其之后版本的新特性。",
+        "order": 1.902
+      },
+      {
+        "id": 8,
+        "name": "CSS揭秘",
+        "sub_title": "使用 CSS3 特性增强体验",
+        "type": "book",
+        "zh_url": "https://weread.qq.com/web/bookDetail/77832ba0718ff5d377894a0",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/book.svg",
+        "intro": "本书将带领读者循序渐进地探寻更优雅的解决方案，攻克每天都会遇到的各种网页样式难题。",
+        "order": 1.903
+      },
+      {
+        "id": 9,
+        "name": "CSS选择器世界",
+        "sub_title": "提升你的竞争力",
+        "type": "book",
+        "zh_url": "https://weread.qq.com/web/bookDetail/19832760813ab7cfbg011dcc",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/book.svg",
+        "intro": "以CSS选择器的基本概念、优先级、命名、best实践以及各伪类选择器的适用场景为技术主线，为CSS开发人员介绍有竞争力的知识和技能。",
+        "order": 1.904
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "CSS Frame",
+    "order": 1.2,
+    "children": [
+      {
+        "id": 16,
+        "name": "Sass",
+        "sub_title": "CSS 预处理器",
+        "type": "docs",
+        "zh_url": "",
+        "en_url": "https://sass-lang.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/sass.png",
+        "intro": "世界上最成熟、最稳定、最强大的专业级CSS扩展语言！",
+        "order": 2.001
+      },
+      {
+        "id": 17,
+        "name": "Less",
+        "sub_title": "给 CSS 加点料",
+        "type": "docs",
+        "zh_url": "https://less.bootcss.com/",
+        "en_url": "https://lesscss.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/less.png",
+        "intro": "It's CSS, with just a little more.\n！",
+        "order": 2.002
+      },
+      {
+        "id": 13,
+        "name": "TailwindCSS",
+        "sub_title": "只需书写 HTML 代码，无需书写 CSS，即可快速构建美观的网站",
+        "type": "docs",
+        "zh_url": "https://www.tailwindcss.cn/",
+        "en_url": "https://tailwindcss.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/tailwind.svg",
+        "intro": "本 CSS 框架本质上是一个工具集，包含了大量类似 flex、 pt-4、 text-center 以及 rotate-90 等工具类，可以组合使用并直接在 HTML 代码上实现任何 UI 设计。",
+        "order": 2.003
+      },
+      {
+        "id": 14,
+        "name": "UnoCSS",
+        "sub_title": "按需引入、即时原子化CSS引擎",
+        "type": "docs",
+        "zh_url": "https://venerable-strudel-d42cce.netlify.app/",
+        "en_url": "https://getbootstrap.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/unocss.svg",
+        "intro": "没有核心实用程序，所有功能都通过预设提供。",
+        "order": 2.004
+      },
+      {
+        "id": 15,
+        "name": "Bootstrap",
+        "sub_title": "用 Bootstrap 构建快速、响应式布局的网站",
+        "type": "docs",
+        "zh_url": "https://v5.bootcss.com/",
+        "en_url": "https://unocss.dev/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/boostrap.svg",
+        "intro": "强大、可扩展、功能丰富的前端开发工具包。它提供的功能包括：基于 Sass 进行编译和定制、内置的网格系统和组件、强大的 JavaScript 插件等。",
+        "order": 2.005
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "CSS Tool",
+    "order": 1.3,
+    "children": [
+      {
+        "id": 123,
+        "name": "Can I use",
+        "sub_title": "CSS 兼容性查询",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://caniuse.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 124,
+        "name": "How to Center",
+        "sub_title": "选择最合适的居中方案",
+        "type": null,
+        "zh_url": null,
+        "en_url": "http://howtocenterincss.com/#contentType=text&content.text.lines=3&content.text.lineHeight=10px&container.width=100px&horizontal=left&vertical=top&browser.IE=none",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 128,
+        "name": "Normalize.css",
+        "sub_title": "CSS 初始化样式",
+        "type": null,
+        "zh_url": null,
+        "en_url": "http://necolas.github.io/normalize.css/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/normalize.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 129,
+        "name": "enjoy css",
+        "sub_title": "CSS 实验室",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://enjoycss.com",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 140,
+        "name": "Layout",
+        "sub_title": "CSS 小组件",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://phuoc.ng/collection/css-layout/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 141,
+        "name": "Clip-path",
+        "sub_title": "使用 Clip-path 生成各种图形",
+        "type": null,
+        "zh_url": "http://tools.jb51.net/code/css3path",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 142,
+        "name": "Cool Backgrounds",
+        "sub_title": "简约背景图案",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://coolbackgrounds.io",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/coolbackground.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 143,
+        "name": "CSS Patterns Gallery",
+        "sub_title": "背景图案",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://projects.verou.me/css3patterns/#",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 144,
+        "name": "Grid",
+        "sub_title": "Grid 布局生成器",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://cssgrid-generator.netlify.app/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 145,
+        "name": "Gradient",
+        "sub_title": "渐变色生成器",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://cssgradient.io",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/gradient.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 146,
+        "name": "Smooth Shadow",
+        "sub_title": "阴影实验室",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://shadows.brumm.af",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 147,
+        "name": "Fancy Border Radius",
+        "sub_title": "border-radius 实验室",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://9elements.github.io/fancy-border-radius/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 148,
+        "name": "Neumorphism",
+        "sub_title": "radius + shadow 实验室",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://neumorphism.io/#e0e0e0",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 149,
+        "name": "Get Waves",
+        "sub_title": "使用 CSS 制作波浪",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://getwaves.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/waves.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 150,
+        "name": "loading",
+        "sub_title": "各种加载动画",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://loading.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": null
+      }
+    ]
+  }
+]

@@ -1,13 +1,11 @@
 <script setup>
 import Masonry from '@/components/Masonry.vue'
-import { useNodeStore } from '@/stores/node'
-
-const nodeStore = useNodeStore()
+import data from '../data/node.json'
 </script>
 
 <template>
   <div class="space-y-16 transition-all">
-    <div v-for="i in nodeStore.nodeList" :key="i.id">
+    <div v-for="i in data" :key="i.id">
       <Masonry :title="i.name" :id="i.id" :store="i.children" />
     </div>
   </div>

@@ -65,7 +65,7 @@ export const useNavStore = defineStore(
     ])
 
     const changeIndex = computed((index) => {
-      currentIndex = index
+      return currentIndex.value = index
     })
 
     return {

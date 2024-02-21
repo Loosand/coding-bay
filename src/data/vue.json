@@ -1,0 +1,221 @@
+[
+  {
+    "id": 7,
+    "name": "Learn Vue",
+    "order": 3.1,
+    "children": [
+      {
+        "id": 41,
+        "name": "Vue",
+        "sub_title": "渐进式 JavaScript 框架",
+        "type": "docs",
+        "zh_url": "https://cn.vuejs.org/",
+        "en_url": "https://vuejs.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vue.svg",
+        "intro": "易学易用，性能出色，适用场景丰富的 Web 前端框架。",
+        "order": null
+      },
+      {
+        "id": 42,
+        "name": "Pinia",
+        "sub_title": "符合直觉的 Vue.js 状态管理库",
+        "type": "docs",
+        "zh_url": "https://pinia.vuejs.org/zh/",
+        "en_url": "https://pinia.vuejs.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/pinia.svg",
+        "intro": "您将喜欢使用的 Vue 存储库",
+        "order": null
+      },
+      {
+        "id": 43,
+        "name": "Vue Router",
+        "sub_title": "Vue.js 的官方路由",
+        "type": "docs",
+        "zh_url": "https://router.vuejs.org/zh/",
+        "en_url": "https://router.vuejs.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vue.svg",
+        "intro": "为 Vue.js 提供富有表现力、可配置的、方便的路由",
+        "order": null
+      },
+      {
+        "id": 44,
+        "name": "VueX",
+        "sub_title": "集中式存储管理应用状态",
+        "type": "docs",
+        "zh_url": "https://vuex.vuejs.org/zh/",
+        "en_url": "https://vuex.vuejs.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vue.svg",
+        "intro": "一个专为 Vue.js 应用程序开发的状态管理模式 + 库",
+        "order": null
+      },
+      {
+        "id": 45,
+        "name": "Nuxt",
+        "sub_title": "易懂的 Web 框架",
+        "type": "docs",
+        "zh_url": "https://nuxt.com.cn/",
+        "en_url": "https://nuxt.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/nuxt.svg",
+        "intro": "使用 Nuxt 自信地构建下一个 Vue.js 应用程序。",
+        "order": null
+      },
+      {
+        "id": 174,
+        "name": "Vue 风格指南",
+        "sub_title": "Vue 书写规范",
+        "type": null,
+        "zh_url": "https://juejin.cn/post/7224426218929176637",
+        "en_url": "https://cn.vuejs.org/style-guide/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vue.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 179,
+        "name": "Vue.js 设计与实现",
+        "sub_title": "带你深入 Vue.js 设计原理",
+        "type": null,
+        "zh_url": "https://weread.qq.com/web/bookDetail/c5c32170813ab7177g0181ae",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vue.svg",
+        "intro": null,
+        "order": null
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Vue Tool",
+    "order": 3.2,
+    "children": [
+      {
+        "id": 48,
+        "name": "Vue Cli",
+        "sub_title": "Vue.js 开发的标准工具",
+        "type": "docs",
+        "zh_url": "https://cli.vuejs.org/zh/",
+        "en_url": "https://cli.vuejs.org",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vue.svg",
+        "intro": "Vue CLI 现已处于维护模式!\n现在官方推荐使用 create-vue 来创建基于 Vite 的新项目。另外请参考 Vue 3 工具链指南 以了解最新的工具推荐。",
+        "order": null
+      },
+      {
+        "id": 49,
+        "name": "Vite",
+        "sub_title": "下一代的前端工具链",
+        "type": "docs",
+        "zh_url": "https://cn.vitejs.dev",
+        "en_url": "https://vitejs.dev",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vite.svg",
+        "intro": "为开发提供极速响应",
+        "order": null
+      },
+      {
+        "id": 50,
+        "name": "VuePress",
+        "sub_title": "Vue 驱动的静态网站生成器",
+        "type": "docs",
+        "zh_url": "https://vuepress.vuejs.org/zh/",
+        "en_url": "https://vuepress.vuejs.org",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vuepress.png",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 51,
+        "name": "VitePress",
+        "sub_title": "Vite 驱动的静态网站生成器",
+        "type": "docs",
+        "zh_url": "https://vitejs.cn/vitepress/",
+        "en_url": "https://vitepress.dev/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vitepress.png",
+        "intro": "Simple, powerful, and fast. Meet the modern SSG framework you've always wanted.",
+        "order": null
+      },
+      {
+        "id": 89,
+        "name": "VeeValidate",
+        "sub_title": "表单验证库",
+        "type": "docs",
+        "zh_url": null,
+        "en_url": "https://vee-validate.logaretm.com/v4/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/veevalidate.png",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 190,
+        "name": "Vue.js Notification",
+        "sub_title": "Vue 弹框提醒库",
+        "type": null,
+        "zh_url": null,
+        "en_url": "http://vue-notification.yev.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vue.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 46,
+        "name": "VueUse",
+        "sub_title": "Vue.js 常用的 Hook",
+        "type": "docs",
+        "zh_url": null,
+        "en_url": "https://vueuse.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vueuse.svg",
+        "intro": "Collection of Essential Vue Composition Utilities",
+        "order": null
+      },
+      {
+        "id": 47,
+        "name": "VueHooks Plus",
+        "sub_title": "让开发具有飞一般的体验的Hook",
+        "type": "docs",
+        "zh_url": "https://inhiblab-core.gitee.io/docs/hooks/index.html",
+        "en_url": "https://inhiblab-core.gitee.io/docs/hooks/en/index.html",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vuehook.svg",
+        "intro": null,
+        "order": null
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Vue UI",
+    "order": 3.2,
+    "children": [
+      {
+        "id": 91,
+        "name": "Element Plus",
+        "sub_title": "基于 Vue3 的B端组件库",
+        "type": "docs",
+        "zh_url": "https://element-plus.gitee.io/zh-CN/",
+        "en_url": "https://element-plus.gitee.io/en-US/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/element.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 92,
+        "name": "Vuetify",
+        "sub_title": "Material 风格组件库",
+        "type": "docs",
+        "zh_url": "https://vuetifyjs.com/zh-Hans/",
+        "en_url": "https://vuetifyjs.com/en",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vuetify.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 194,
+        "name": "arco.design",
+        "sub_title": "字节跳动出品的企业级设计系统",
+        "type": null,
+        "zh_url": "https://arco.design",
+        "en_url": "https://arco.design/en-US",
+        "icon": null,
+        "intro": null,
+        "order": null
+      }
+    ]
+  }
+]

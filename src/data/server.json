@@ -1,0 +1,235 @@
+[
+  {
+    "id": 12,
+    "name": "网络请求",
+    "order": 6.1,
+    "children": [
+      {
+        "id": 55,
+        "name": "HTTP状态码",
+        "sub_title": "HTTP 状态码详解",
+        "type": "docs",
+        "zh_url": "https://tool.oschina.net/commons?type=5",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/http.svg",
+        "intro": "",
+        "order": null
+      },
+      {
+        "id": 93,
+        "name": "Axios",
+        "sub_title": "基于 promise 的网络请求库",
+        "type": "docs",
+        "zh_url": "https://www.axios-http.cn/",
+        "en_url": "https://www.axios-http.cn/en/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/axios.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 109,
+        "name": "以太网与 TCP/IP",
+        "sub_title": "计算机网络知识",
+        "type": "docs",
+        "zh_url": "https://deerchao.cn/blog/posts/network.html",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/docs.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 196,
+        "name": "RESTful",
+        "sub_title": "一种流行的 API 设计风格",
+        "type": null,
+        "zh_url": "https://restfulapi.cn",
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "项目部署",
+    "order": 6.2,
+    "children": [
+      {
+        "id": 104,
+        "name": "Linux 手册",
+        "sub_title": "准确，丰富，稳定，在技术之路上为您护航！",
+        "type": "docs",
+        "zh_url": "https://www.linuxcool.com/",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/linux.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 105,
+        "name": "Bash 脚本教程",
+        "sub_title": "本教程介绍 Linux 命令行 Bash 的基本用法和脚本编程。",
+        "type": "docs",
+        "zh_url": "https://wangdoc.com/bash/",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/bash.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 186,
+        "name": "Docker",
+        "sub_title": "开源的应用容器引擎",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://docs.docker.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/docker.svg",
+        "intro": null,
+        "order": null
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "NetWork Tool",
+    "order": 6.3,
+    "children": [
+      {
+        "id": 169,
+        "name": "Apifox",
+        "sub_title": "API 文档、调试、Mock、自动化测试",
+        "type": null,
+        "zh_url": "https://apifox.com",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/apifox.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 187,
+        "name": "Postman",
+        "sub_title": "API 管理工具",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://www.postman.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/postman.svg",
+        "intro": null,
+        "order": null
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "云服务",
+    "order": 6.4,
+    "children": [
+      {
+        "id": 201,
+        "name": "腾讯云",
+        "sub_title": null,
+        "type": null,
+        "zh_url": null,
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 202,
+        "name": "阿里云",
+        "sub_title": null,
+        "type": null,
+        "zh_url": null,
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 203,
+        "name": "火山引擎",
+        "sub_title": null,
+        "type": null,
+        "zh_url": null,
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 204,
+        "name": "宝塔",
+        "sub_title": null,
+        "type": null,
+        "zh_url": null,
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "数据库",
+    "order": 6.5,
+    "children": [
+      {
+        "id": 170,
+        "name": "SQL 系统课",
+        "sub_title": "史上最易懂SQL教程！",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://www.bilibili.com/video/BV1UE41147KC/?p=1&vd_source=7a9a8e283cdf9d5ce89d9263c3f4fc4f",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/video.svg",
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 197,
+        "name": "MongoDB",
+        "sub_title": "构建更快速。构建更智能。​​",
+        "type": null,
+        "zh_url": "https://www.mongodb.com/zh-cn",
+        "en_url": "https://www.mongodb.com/",
+        "icon": null,
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 198,
+        "name": "Redis",
+        "sub_title": null,
+        "type": null,
+        "zh_url": null,
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 199,
+        "name": "Firebase",
+        "sub_title": null,
+        "type": null,
+        "zh_url": null,
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      },
+      {
+        "id": 200,
+        "name": "LeanCloud",
+        "sub_title": null,
+        "type": null,
+        "zh_url": null,
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": null
+      }
+    ]
+  }
+]

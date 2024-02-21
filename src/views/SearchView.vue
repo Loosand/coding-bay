@@ -2,16 +2,12 @@
 import CategoryItem from '@/components/CategoryItem.vue'
 import LayoutHeader from '@/layout/Components/LayoutHeader.vue'
 import router from '@/router'
-import { useAllNodeStore } from '@/stores/node'
-import { useSearchStore } from '@/stores/search'
+import allData from '../data/all.json'
 import { useMenuStore } from '@/stores/nav'
 import { useNavStore } from '@/stores/nav'
 
 const menuStore = useMenuStore()
 const navStore = useNavStore()
-
-const allNodeStore = useAllNodeStore()
-const searchStore = useSearchStore()
 </script>
 
 <template>
@@ -22,7 +18,7 @@ const searchStore = useSearchStore()
       <nav v-show="menuStore.isMenuOpen" class="block text-white transition md:hidden">
         <ul class="item-center flex flex-col flex-wrap gap-3 bg-gray-600 px-8 py-4 font-bold">
           <li
-            v-for="i in navStore.items"
+            v-for="i in allData"
             key="i.id"
             class="cursor-pointer rounded-md transition hover:bg-white hover:text-black dark:hover:bg-gray-800 dark:hover:text-white"
             :class="{ current_mobile: navStore.currentIndex === i.id }"
@@ -53,35 +49,25 @@ const searchStore = useSearchStore()
     </div>
   </header>
 
-  <!-- 未搜索 -->
-  <div
-    v-if="!allNodeStore.searchResult"
-    class="m-auto w-fit pt-28 text-4xl font-bold dark:text-white md:pt-72"
-  >
-    <div v-if="searchStore.keywordPinia">
+  <!-- 未搜索
+  <div class="m-auto w-fit pt-28 text-4xl font-bold md:pt-72 dark:text-white">
+    <div>
       <h1>
         没有找到关于<span class="px-3 text-red-500">{{ searchStore.keywordPinia }}</span
         >的搜索结果
       </h1>
     </div>
-    <div v-else>请搜索</div>
-  </div>
+    <div>请搜索</div>
+  </div> -->
 
   <!-- 已搜索 -->
-  <div v-else class="ml-8 mr-5 h-[1000px] space-y-6 pt-28 md:ml-36 md:pt-72">
+  <div class="ml-8 mr-5 h-[1000px] space-y-6 pt-28 md:ml-36 md:pt-72">
     <h1 class="text-4xl font-bold dark:text-white">
-      <span class="px-3 text-red-500">{{ searchStore.keywordPinia }}</span
-      >的搜索结果
+      <span class="px-3 text-red-500"></span>的搜索结果
     </h1>
 
     <div class="z-10 m-auto" transition-duration=".3s" gutter="16" v-masonry="containerId">
-      <CategoryItem
-        class="mb-5"
-        v-masonry-tile
-        v-for="i in allNodeStore.filterNodes"
-        :key="i.id"
-        :item="i"
-      >
+      <CategoryItem class="mb-5" v-masonry-tile v-for="i in allData" :key="i.id" :item="i">
       </CategoryItem>
     </div>
   </div>

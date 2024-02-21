@@ -5,7 +5,6 @@ const instance = axios.create({
     'Content-Type': 'application/x-www-form-urlencoded'
   },
   baseURL: 'http://43.143.98.167:3000',
-  // baseURL: 'http://localhost:3000',
   timeout: 5000,
   responseType: 'json'
 })
@@ -15,7 +14,7 @@ instance.interceptors.request.use(
   (config) => {
     // config 中有我们请求的信息
     // 获取请求的url地址
-    const url = config.url
+
     // 从缓存中读取token值
     const token = localStorage.getItem('token')
     // 当我们缓存中有token则把token添加到请求头中，携带到后端

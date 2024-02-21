@@ -1,0 +1,324 @@
+[
+  {
+    "id": 10,
+    "name": "工程化 ",
+    "order": 5.1,
+    "children": [
+      {
+        "id": 33,
+        "name": "Npm",
+        "sub_title": "前端都来磕个头",
+        "type": "website",
+        "zh_url": "https://www.npmjs.cn/",
+        "en_url": "https://www.npmjs.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/npm.svg",
+        "intro": "npm 为你和你的团队打开了连接整个 JavaScript 天才世界的一扇大门。",
+        "order": 10.001
+      },
+      {
+        "id": 37,
+        "name": "Yarn",
+        "sub_title": "安全、稳定、reproducible projects",
+        "type": "docs",
+        "zh_url": "https://www.yarnpkg.cn/",
+        "en_url": "https://yarnpkg.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/yarn.svg",
+        "intro": "Yarn 是一个软件包管理器，还可以作为项目管理工具。无论你是小型项目还是大型单体仓库（monorepos），无论是业余爱好者还是企业用户，Yarn 都能满足你的需求。",
+        "order": 10.002
+      },
+      {
+        "id": 178,
+        "name": "pnpm",
+        "sub_title": "速度快、节省磁盘空间的软件包管理器",
+        "type": null,
+        "zh_url": "https://www.pnpm.cn/",
+        "en_url": "https://pnpm.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/pnpm.svg",
+        "intro": null,
+        "order": 10.003
+      },
+      {
+        "id": 34,
+        "name": "Git",
+        "sub_title": "版本控制工具",
+        "type": "docs",
+        "zh_url": "http://gitref.justjavac.com/index.html",
+        "en_url": "https://git-scm.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/git.svg",
+        "intro": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+        "order": 10.004
+      },
+      {
+        "id": 107,
+        "name": "Gitee",
+        "sub_title": "国内版本管理",
+        "type": "website",
+        "zh_url": "https://gitee.com/",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/gitee.svg",
+        "intro": null,
+        "order": 10.005
+      },
+      {
+        "id": 106,
+        "name": "Github",
+        "sub_title": "国际版本管理",
+        "type": "website",
+        "zh_url": "https://github.com/",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/github.svg",
+        "intro": null,
+        "order": 10.006
+      },
+      {
+        "id": 86,
+        "name": "Vite",
+        "sub_title": "下一代的前端工具链",
+        "type": "docs",
+        "zh_url": "https://cn.vitejs.dev",
+        "en_url": "https://vitejs.dev",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/vite.svg",
+        "intro": "为开发提供极速响应",
+        "order": 10.007
+      },
+      {
+        "id": 32,
+        "name": "Webpack",
+        "sub_title": "Webpack文档",
+        "type": "docs",
+        "zh_url": "https://www.webpackjs.com/",
+        "en_url": "https://webpack.js.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/webpack.svg",
+        "intro": "webpack 是一个用于现代 JavaScript 应用程序的 静态模块打包工具。",
+        "order": 10.008
+      },
+      {
+        "id": 38,
+        "name": "PostCSS",
+        "sub_title": "一个用 JavaScript 工具和插件转换 CSS 代码的工具",
+        "type": "docs",
+        "zh_url": "https://www.postcss.com.cn/",
+        "en_url": "https://postcss.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/postcss.png",
+        "intro": "Post CSS 是一个用 JavaScript 工具和插件转换 CSS 代码的工具",
+        "order": 10.009
+      },
+      {
+        "id": 39,
+        "name": "EsLint",
+        "sub_title": "可组装的JavaScript和JSX检查工具",
+        "type": "docs",
+        "zh_url": "https://zh-hans.eslint.org/",
+        "en_url": "https://eslint.org/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/eslint.svg",
+        "intro": "ESLint 通过静态分析代码以快速发现问题。大多数文本编辑器都内置了 ESLint 支持， 但你也可以在持续集成管道中运行 ESLint。",
+        "order": 10.01
+      },
+      {
+        "id": 40,
+        "name": "Prettier",
+        "sub_title": "一个“有态度”的代码格式化工具",
+        "type": "docs",
+        "zh_url": "https://www.prettier.cn/",
+        "en_url": "https://prettier.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/prettier.png",
+        "intro": "Prettier is an opinionated code formatter",
+        "order": 10.011
+      },
+      {
+        "id": 35,
+        "name": "Rollup",
+        "sub_title": "模块打包工具",
+        "type": "docs",
+        "zh_url": "https://www.rollupjs.com/",
+        "en_url": "https://rollupjs.org/guide/en.html",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/rollup.png",
+        "intro": "Rollup 是一个 JavaScript 模块打包工具，可以将多个小的代码片段编译为完整的库和应用。",
+        "order": 10.012
+      },
+      {
+        "id": 36,
+        "name": "Babel",
+        "sub_title": "现在就开始使用下一代 JavaScript 语法吧",
+        "type": "docs",
+        "zh_url": "https://babel.docschina.org/",
+        "en_url": "https://babeljs.io/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/babel.svg",
+        "intro": "Babel 是一个 JavaScript 编译器。",
+        "order": 10.013
+      },
+      {
+        "id": 171,
+        "name": "Mock.js",
+        "sub_title": "模拟数据接口",
+        "type": null,
+        "zh_url": "http://mockjs.com/",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/docs.svg",
+        "intro": null,
+        "order": 10.014
+      },
+      {
+        "id": 210,
+        "name": "Yeoman",
+        "sub_title": "用WEB脚手架工具\n构建WEB APP\n优化你的工作流",
+        "type": null,
+        "zh_url": "https://yowebapp.github.io",
+        "en_url": null,
+        "icon": null,
+        "intro": null,
+        "order": 10.015
+      },
+      {
+        "id": 113,
+        "name": "glup",
+        "sub_title": "用自动化构建工具增强你的工作流程！",
+        "type": "docs",
+        "zh_url": "https://www.gulpjs.com.cn",
+        "en_url": "https://www.gulpjs.com.cn",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/gulp.png",
+        "intro": null,
+        "order": 10.015
+      },
+      {
+        "id": 108,
+        "name": "Learn Git",
+        "sub_title": "循序渐进地介绍 Git 主要命令",
+        "type": "website",
+        "zh_url": "https://learngitbranching.js.org/?locale=zh_CN",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/website.svg",
+        "intro": null,
+        "order": 10.102
+      },
+      {
+        "id": 207,
+        "name": "Webpack 系统课",
+        "sub_title": "彻底搞懂吃透 Webpack",
+        "type": null,
+        "zh_url": "https://www.bilibili.com/video/BV1kP41177wp/?spm_id_from=333.999.0.0&vd_source=7a9a8e283cdf9d5ce89d9263c3f4fc4f",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/bilibili.svg",
+        "intro": null,
+        "order": 10.701
+      },
+      {
+        "id": 180,
+        "name": "Clean Code",
+        "sub_title": "编写整洁、规范的代码",
+        "type": null,
+        "zh_url": null,
+        "en_url": "https://www.bilibili.com/video/BV1tb4y117ee/?spm_id_from=333.999.0.0&vd_source=7a9a8e283cdf9d5ce89d9263c3f4fc4f",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/bilibili.svg",
+        "intro": null,
+        "order": 10.702
+      },
+      {
+        "id": 83,
+        "name": "前端性能优化原理与实践",
+        "sub_title": "毫秒必争！深入理解前端性能原理",
+        "type": "juejing",
+        "zh_url": "https://juejin.cn/book/6844733750048210957?scrollMenuIndex=0",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": null,
+        "order": 10.801
+      },
+      {
+        "id": 216,
+        "name": "深入浅出 Vite",
+        "sub_title": "系统化学习现代构建工具 Vite，提升前端工程化能力",
+        "type": null,
+        "zh_url": "https://juejin.cn/book/7050063811973218341?enter_from=course_center&utm_source=course_center",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": null,
+        "order": 10.802
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "服务器开发",
+    "order": 5.2,
+    "children": [
+      {
+        "id": 29,
+        "name": "Node.js",
+        "sub_title": "Node.js文档",
+        "type": "docs",
+        "zh_url": "https://nodejs.cn/",
+        "en_url": "https://nodejs.dev/en/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/node.svg",
+        "intro": "Node.js 是一个开源的、跨平台的 JavaScript 运行时环境。",
+        "order": 11.001
+      },
+      {
+        "id": 30,
+        "name": "Express.js",
+        "sub_title": "Express文档",
+        "type": "docs",
+        "zh_url": "https://express.nodejs.cn/",
+        "en_url": "http://expressjs.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/express.png",
+        "intro": "快速、独立、极简的 Node.js Web 框架。",
+        "order": 11.002
+      },
+      {
+        "id": 114,
+        "name": "koa",
+        "sub_title": "基于 Node.js 平台的下一代 web开发框架",
+        "type": null,
+        "zh_url": "https://koa.bootcss.com/index.html#",
+        "en_url": "https://cn.bing.com/search?q=koa&form=APMCS1&PC=APMC",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/koa.png",
+        "intro": null,
+        "order": 11.003
+      },
+      {
+        "id": 31,
+        "name": "Nest.js",
+        "sub_title": "Nest.js 文档",
+        "type": "docs",
+        "zh_url": "http://nestjs.inode.club",
+        "en_url": "https://nestjs.com/",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/nest.svg",
+        "intro": "用于构建高效且可伸缩的服务端应用程序的渐进式 Node.js 框架。",
+        "order": 11.004
+      },
+      {
+        "id": 115,
+        "name": "egg",
+        "sub_title": "为企业级框架和应用而生",
+        "type": null,
+        "zh_url": "https://www.eggjs.org/zh-CN",
+        "en_url": "https://www.eggjs.org",
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/egg.svg",
+        "intro": null,
+        "order": 11.005
+      },
+      {
+        "id": 192,
+        "name": "Express 系统课",
+        "sub_title": "结合文档的 Express 完全指南",
+        "type": null,
+        "zh_url": "https://www.bilibili.com/video/BV1mQ4y1C7Cn/?spm_id_from=333.999.0.0&vd_source=7a9a8e283cdf9d5ce89d9263c3f4fc4f",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/video.svg",
+        "intro": null,
+        "order": 11.701
+      },
+      {
+        "id": 191,
+        "name": "Nest 通关秘籍",
+        "sub_title": "Nest 全栈教程",
+        "type": null,
+        "zh_url": "https://juejin.cn/book/7226988578700525605?enter_from=search_result&utm_source=search",
+        "en_url": null,
+        "icon": "https://loosand-picture.oss-cn-hangzhou.aliyuncs.com/img/juejing.svg",
+        "intro": null,
+        "order": 11.801
+      }
+    ]
+  }
+]

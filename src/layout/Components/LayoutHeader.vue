@@ -2,16 +2,14 @@
 import { onMounted, ref } from 'vue'
 import { useWindowScroll, useWindowSize } from '@vueuse/core'
 import { useMenuStore } from '@/stores/nav'
-import { useSearchStore } from '@/stores/search'
+import { useRouter } from 'vue-router'
 
 const menuStore = useMenuStore()
-const searchStore = useSearchStore()
 const { y } = useWindowScroll()
 const { width } = useWindowSize()
 
-const { updateKeyword } = searchStore
-
 const keyword = ref('')
+const router = useRouter()
 
 // 黑暗模式
 const mode = ref(true)
@@ -41,12 +39,16 @@ onMounted(() => {
     search.value.focus()
   }
 })
+
+const handleSearch = () => {
+  router.push(`/views/SearchView?keyword=${keyword.value}`)
+}
 </script>
 
 <template>
   <header
     :class="{ 'md:h-64 md:flex-col': y < 60 }"
-    class="relative flex h-20 items-center justify-around gap-4 bg-gray-800 font-bold text-white shadow-lg transition-all duration-300 dark:bg-gray-900 dark:text-white md:h-24 md:justify-center md:bg-gray-900 md:shadow-none dark:md:bg-gradient-to-r dark:md:from-gray-900 dark:md:to-stone-900"
+    class="relative flex h-20 items-center justify-around gap-4 bg-gray-800 font-bold text-white shadow-lg transition-all duration-300 md:h-24 md:justify-center md:bg-gray-900 md:shadow-none dark:bg-gray-900 dark:text-white dark:md:bg-gradient-to-r dark:md:from-gray-900 dark:md:to-stone-900"
   >
     <!-- MOBILE MENU ICON -->
     <img
@@ -63,7 +65,7 @@ onMounted(() => {
     <!--TITLE -->
     <h1
       :class="{ 'justify-items-starts': y > 60, 'md:text-6xl': y < 60 }"
-      class="hidden text-3xl dark:text-red-500 md:block"
+      class="hidden text-3xl md:block dark:text-red-500"
     >
       <span class="font-light">Cod</span>ing Bay
     </h1>
@@ -77,13 +79,13 @@ onMounted(() => {
         <input
           ref="search"
           v-model="keyword"
-          @keyup.enter="updateKeyword(keyword)"
+          @keyup.enter="handleSearch"
           type="search"
           placeholder="🔎 学习前沿、实用的前端技术"
           autocomplete="off"
           spellcheck="false"
           role="combobox"
-          class="mt-2 w-80 rounded-full px-3 py-2 indent-2 text-base font-semibold text-black shadow-md focus:outline-sky-600 dark:bg-gray-900 dark:text-white dark:outline dark:focus:outline-white md:rounded-none"
+          class="mt-2 w-80 rounded-full px-3 py-2 indent-2 text-base font-semibold text-black shadow-md focus:outline-sky-600 md:rounded-none dark:bg-gray-900 dark:text-white dark:outline dark:focus:outline-white"
         />
       </div>
     </div>
